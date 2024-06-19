@@ -1,1 +1,8 @@
+bag of words features: I an Grooot We are Love you guys
+x1 = ()
+x2=
+x3=  
 
+TF-IDF freatures: log (totoal # of documents/ #documents containg i )
+
+x1 = (log (3/3))
