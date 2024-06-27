@@ -76,7 +76,7 @@ not a good module bcs the order does not matter
 
     Pr{am | I} = c_(I am) / c_I = 13/13 =1
     Pr{Groot | am} = c_(am Groot) / c_am = 13/13
-    Pr{I | Groot} = 0
+    Pr{I | Groot} = 12/14 , (Groot followed by I)
 
     Pr(I am Groot) = Pr{I} * Pr{am | I} * Pr {Goot | am } = 13/42 *1*1=13/42
 
