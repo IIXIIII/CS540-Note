@@ -26,6 +26,70 @@ GPT stands for Generative Pre-trained Transformer.
 
 📗 The probability of observing a word wt at position t of the sentence can be written as P(wt) (or in statistics P(Wt = wt)).
 
+
+# Unigram Model
+
+# Maximum Likelihood Estimation
+    The cat sat on the mat 
+	1.	Tokenization: [“the”, “cat”, “sat”, “on”, “the”, “mat”]
+	2.	Word Frequencies:
+		the: 2
+		cat: 1
+		sat: 1
+		on: 1
+		mat: 1
+	3.	Total Words: 6
+	4.	Word Probabilities:
+		P(the) = 2/6 = 0.333
+		P(cat) = 1/6 = 0.167
+		P(sat) = 1/6 = 0.167
+		P(on) = 1/6 = 0.167
+		P(mat) = 1/6 = 0.167
+
+the order Does not matter
+
+Ex: 
+Pr{I} = c_I /#words = 13/ 3*14
+Pr{am} = c_am / #words = 13/ 3*14
+Pr{Groot} = 1/13
+Pr{I am Groot} = Pr{I} * Pr{am} * Pr{Groot} 
+
+not a good module bcs the order does not matter 
+
+
+# Bigram Model
+    order Matters
+    Bigram module assumes Markov property 
+    
+    Calculatoin: (the probbability of the word sequence appear)/ (the word sequence appear)
+
+    in the matrix, every matrix is a probability distribution. roll add up = 1 
+
+    probability matrix, when there is a word, go to colomn of the word and then choose a word. and then ....
+
+
+# Transition Matrix
+    Linear Algebra
+
+# Trigram Modele
+    Laplace Smoothing
+
+    Pr{am | I} = c_(I am) / c_I = 13/13 =1
+    Pr{Groot | am} = c_(am Groot) / c_am = 13/13
+    Pr{I | Groot} = 0
+
+    Pr(I am Groot) = Pr{I} * Pr{am | I} * Pr {Goot | am } = 13/42 *1*1=13/42
+
+
+
+
+
+
+
+
+
+
+
 bag of words features: I an Grooot We are Love you guys
 x1 = ()
 x2=
