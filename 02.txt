@@ -1,1 +1,54 @@
+# Trigram module #
+  calculate the probability that one word followed by another
+  ex:
+    I am Groot * 13 + We are groot
+  Pr{I | Groot }  = probibility of I come after Groot / the times Groot ever appear
+                  = 12 / 14
+Laplace Smoothing:
+  if some case never appper, then the denominator will be 0 ()
+  ex:
+    (12+1) / (14 + 5) (add 5 cause there are totoal of 5 words in the sentence.)
+
+    we are adding 1 to each element. (in the example it is a 5x5 matrix so it should add 5 in the deno)
+
+The estimated (trained ) transition matrix：
+   5 x 5 matrix 
+      I am Groot We are 
+I 
+am
+Groot
+we
+are 
+
+the Laplace smoothing is always applyed.  (for some reason and I dont know why)
+
+In A1, the first element should be space.  
+
+
+==== next topic ====
+
+# Supervised learning  (super, unsuper, reinforce)
+  relationship fo answer and question pairs 
+
+📗 A machine learning data set usually contains features (text, images, ... converted to numerical vectors) and labels (categories, converted to integers).
+
+Feature: X (text or imagees converted ot numerical vectors )
+Labels: Y (categoreis converted to Integers.)
+
+Supervised learning: giving set (X,Y), estimate the prediction function Y = f(X)
+
+Discriminative model estimates P{y|x}:
+Generative model: P{x|y} and predicts P{y|x}
+
+
+
+
+
+
+
+
+
+
+
+
 
