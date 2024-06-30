@@ -41,10 +41,42 @@ Discriminative model estimates P{y|x}:
 Generative model: P{x|y} and predicts P{y|x}
 
 
+# Natural Language Processing
+📗 When processing language data, documents need to be first turned into sequences of word tokens.
+➩ Split the string by space and punctuation.
+➩ Remove stop-words such as "the", "of", "a", "with".
+➩ Lower case all characters.
+➩ Stemming or lemmatization words: change "looks", "looked", "looking" to "look". (kind of like puting similar words into groups)
+📗 Each document needs to be converted into a numerical vector for supervised learning tasks.
+  and here are two ways of convering them:
+➩ Bag of words: feature uses the number of occurrences of each word type: Wikipedia.
+➩ TF-IDF: Term-Frequency Inverse-Document-Frequency (TF-IDF) feature adjusts for whether each word type appears in multiple documents: Wikipedia.
 
 
 
 
+# Bag of words Feature (method of convertinig txt into deatures(matrix))
+  just like the Unigram probability 
+  tiems of the target word appear / the total words 
+
+  ex:
+    the previous example:
+    vaector of 5 number, the P{I}, P{am}, P{Groot} ......
+
+# TF IDF Features
+  TF - term frequency
+  IDF - Inverse Document Frequency
+
+  TF: the same way as in the bag of words features. TF = cij/ci1+...+cim  
+  IDF: IDFj = log(n/|{j:cij>0}|)
+
+# Supervised Learning Tasks #
+📗 If the documents are labeled, then a supervised learning task is: given a training set of document features (for example, bag of words, TF-IDF) and their labels, estimate a function that predicts the label for new documents.
+➩ Given emails, predict whether they are spams or hams.
+➩ Given comments, predict whether they are offensive or not.
+➩ Given reviews, predict whether they are positive or negative.
+➩ Given essays, predict the grade A, B, ... or F.
+➩ Given documents, predict which language it is from.
 
 
 
