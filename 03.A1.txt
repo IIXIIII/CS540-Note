@@ -1,1 +1,63 @@
+Discriminative vs. Generative Models
+
+Discriminative models: directly estimate P{y|x}
+Generative models: estimate the likelyhood of P{x|y} = 
+
+Example: 
+                    Besing sus x=1     not sus x=0
+an assassin y=1          3                1  
+not assassin y=0         2                6
+
+Generative model: e.g. Naive Bayes, we estimate CPT (conditional prob table) from the training set；
+Pr{x=1 | y=1} = Pr{x=1,y=1}/ Pr{y=1} = 3/4
+Pr{x=0 | y=1} = 1/4
+Pr{x=1 | y=0} = 2/8 = 1/4
+Pr{x=0 | y=0} = 6/8 = 3/4
+
+use Bayes rule to compute Pr{y=1 | x=1} (not using the training set, using the CPT)
+
+Pr{y=1 | x=1} = 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
