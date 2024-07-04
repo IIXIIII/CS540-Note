@@ -16,19 +16,24 @@ Pr{x=0 | y=0} = 6/8 = 3/4
 
 use Bayes rule to compute Pr{y=1 | x=1} (not using the training set, using the CPT)
 
-Pr{y=1 | x=1} = 
+Pr{y=1 | x=1} = Pr{x=1 | y=1}Pr{y=1}/Pr{x=1 | y=0}pr{y=0} + Pr{x=1 | y=1}Pr{y=1}
+              = 3/4 * 1/3 / (1/4*2/3+3/4*1/3) = 0.6
 
 
+# Naive Bayes Classifier:
+  which is a simple Bayesian Network that assumes the features are independent.
+  The key assumption is the independence assumption:
+  Ex:
+    the P{Email is spam} = P{word Xi apper that lead to a spam Email} * P{word Xj apper ....} * .....
+
+  this is not a good way 
 
 
+Example: 
+  Consider the problem of detecting if an email message is a spam. Say we use four random variables to model this problem: a binary class variable S indicates if the message is a spam, and three binary feature variables: C,F,N indicating whether the message contains "Cash", "Free", "Now". We use a Naive Bayes classifier with   associated CPTs (Conditional Probability Table):
 
-
-
-
-
-
-
-
+Prior P {S = 1} = 0.87  meaning that in the training set, there are 87% spam.
+Hams P{C=1|S=0}
 
 
 
