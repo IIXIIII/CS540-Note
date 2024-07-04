@@ -33,7 +33,16 @@ Example:
   Consider the problem of detecting if an email message is a spam. Say we use four random variables to model this problem: a binary class variable S indicates if the message is a spam, and three binary feature variables: C,F,N indicating whether the message contains "Cash", "Free", "Now". We use a Naive Bayes classifier with   associated CPTs (Conditional Probability Table):
 
 Prior P {S = 1} = 0.87  meaning that in the training set, there are 87% spam.
-Hams P{C=1|S=0}
+Hams  P{C=1|S=0} = 35% p{F=1|S=0} = 27% P{N=1|S=0} = 46%
+Spams p{C=1|S=1} = 40% P{F=1|S=1} = 96% P{N=1|S=1} = 30%
+
+Compute P{C=0, F=1,N=0}
+
+= P{C=0, F=1,N=0, S=0} + P{C=0, F=1,N=0, S=1}
+= P{C=0, F=1,N=0| S=0} * P{S=0} + P{C=0, F=1,N=0|S=1} * p{S=1}
+= 0.65*0.13
+
+* When the features are independent 
 
 
 
