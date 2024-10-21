@@ -57,6 +57,22 @@ Calculation: aqr(Euclidean distance between pt and center) add up.
   
 
 ## **L6**  
+### **Decision Tree**  
+Supervised learning  
+➩ Find the feature that is the most informative.  
+➩ Split the training set into subsets based on this feature.  
+➩ Repeat on each of the subset recursively until all features or labels in the subset are the same.  
+
+### **Measure of Uncertainty**  
+Let P0 be the fraction of items in a training with label 0 and P1 be the fraction of items with label 1.  
+➩P0 = 0 and P1 = 1, vise versa, no uncertainty, the measure of uncertainty is 0.  
+➩If both is 0/5, then the uncertainty is max, which is 1.  
+Calculation: H = -p0 * log2(p0) - p1 * log2(p1)  
+
+### **Entropy**  
+
+
+
 
 
 
