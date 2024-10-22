@@ -62,6 +62,7 @@ Supervised learning
 ➩ Find the feature that is the most informative.  
 ➩ Split the training set into subsets based on this feature.  
 ➩ Repeat on each of the subset recursively until all features or labels in the subset are the same.  
+<img width="1132" alt="Screenshot 2024-10-22 at 5 00 19 PM" src="https://github.com/user-attachments/assets/3543cfc1-cc5a-4c81-9044-7ece8ef770f0">
 
 ### **Measure of Uncertainty**  
 Let P0 be the fraction of items in a training with label 0 and P1 be the fraction of items with label 1.  
