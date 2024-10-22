@@ -112,6 +112,10 @@ We use the **perception Alg** to adjust.
 The **learning rate** controls how fast the weights are updated.  
 **learning rate** is usually constant, ussually 1.  
 **learning rate** can also be a function of time.  
+![image](https://github.com/user-attachments/assets/e7f93319-bc9b-4d59-9d04-ab1bdab698ad)
+
+![image](https://github.com/user-attachments/assets/8206dab1-9630-4246-b7e2-2938f3a26200)  
+
 
 
 
