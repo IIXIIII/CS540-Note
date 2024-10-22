@@ -1,4 +1,4 @@
-# Midterm 01 review
+# **Midterm 01 review**
   
 ## **L3**  
 ### **High Dimensional Data**  
@@ -70,6 +70,22 @@ Let P0 be the fraction of items in a training with label 0 and P1 be the fractio
 Calculation: H = -p0 * log2(p0) - p1 * log2(p1)  
 
 ### **Entropy**  
+K classters, Py is the fraction of the training set with label y,   
+H(y) = -p1 * log2(p1) - p2 * log2(p2) - ... - pk * log2(pk)   
+Conditional entropy is the entropy of the conditional distribution:  
+
+### **Information Gain**   
+The Entropy before the split - the Entropy after the split, I(y|x) = H(y) - H(y|x)  
+The larger the Information Gain, the more info we know.   
+Decision tree is jsut split the dataset the way that all have the most Information Gain, on and on  
+Computation:  
+    
+### **Pruning**  
+
+### **Random Forest**  
+### **Adaptive Boosting**  
+
+
 
 
 
