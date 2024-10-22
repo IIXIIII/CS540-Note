@@ -116,7 +116,11 @@ The **learning rate** controls how fast the weights are updated.
 
 ![image](https://github.com/user-attachments/assets/8206dab1-9630-4246-b7e2-2938f3a26200)  
 
-
+### **Activation Functions**  
+Usually act like a middle layer of a Neuro network that cam be linear or non-linear,  
+  
+Sometimes there are **Vanishing Gradient Problem**, because layers of neuro network reduce info and no Gradient no learning.  
+To fix this we use **Activision Functions** that dont squeezes information.  
 
 
 
