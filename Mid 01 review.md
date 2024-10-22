@@ -62,7 +62,16 @@ Supervised learning
 ➩ Find the feature that is the most informative.  
 ➩ Split the training set into subsets based on this feature.  
 ➩ Repeat on each of the subset recursively until all features or labels in the subset are the same.  
-<img width="1132" alt="Screenshot 2024-10-22 at 5 00 19 PM" src="https://github.com/user-attachments/assets/3543cfc1-cc5a-4c81-9044-7ece8ef770f0">
+<img width="1132" alt="Screenshot 2024-10-22 at 5 00 19 PM" src="https://github.com/user-attachments/assets/3543cfc1-cc5a-4c81-9044-7ece8ef770f0">  
+Find ways to do the split that mini the Gini Index.  
+Make sure the node is as pure as possible so it could be either a yes or a no (binary, 0 or 1)  
+**Divergence** like Gini, need to be as big as possible. THe biger the value, the pure the node.  
+<img width="1469" alt="Screenshot 2024-10-22 at 5 06 14 PM" src="https://github.com/user-attachments/assets/c2c3b735-506e-430b-baf8-2cddf9fdee06">  
+<img width="1470" alt="Screenshot 2024-10-22 at 5 07 21 PM" src="https://github.com/user-attachments/assets/2ef9f633-f402-4e5b-abc0-342fdb0cf68d">  
+The Divergence of the age split is greater than the gender split, Leading to a more pure node, therefore it is batter.  
+
+
+
 
 ### **Measure of Uncertainty**  
 Let P0 be the fraction of items in a training with label 0 and P1 be the fraction of items with label 1.  
@@ -117,11 +126,24 @@ The **learning rate** controls how fast the weights are updated.
 
 ![image](https://github.com/user-attachments/assets/8206dab1-9630-4246-b7e2-2938f3a26200)  
 
-### **Activation Functions**  
+### **Activation Functions**  closely related with the **Neuro Network**
+This function an be nonlinear: sigmoid,ReLU (work well in practice),....  
+Sometimes the ReLU doesn't work because it block the negative input, the **Leaky ReLU** and **ELU** sometimes can fix this problem.  
 Usually act like a middle layer of a Neuro network that cam be linear or non-linear,  
   
 Sometimes there are **Vanishing Gradient Problem**, because layers of neuro network reduce info and no Gradient no learning.  
 To fix this we use **Activision Functions** that dont squeezes information.  
+<img width="1465" alt="Screenshot 2024-10-22 at 5 27 42 PM" src="https://github.com/user-attachments/assets/0e98c5fa-abcf-4387-86ff-86fac45c73a4">  
+
+### **Loss Functions** which need **Linear Regression**  
+
+
+###**Linear Regression**  
+The point (or goal) of ML or Regression is to drow a line the pass through a cloud of points.  
+<img width="1115" alt="Screenshot 2024-10-22 at 5 33 57 PM" src="https://github.com/user-attachments/assets/b449e5fb-3e87-4749-bb60-31a0a3ee7019">   
+The first two work, since the coeff is linear, but the second doesn't work for linear regression.  
+
+
 
 
 
