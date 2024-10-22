@@ -79,11 +79,20 @@ The Entropy before the split - the Entropy after the split, I(y|x) = H(y) - H(y|
 The larger the Information Gain, the more info we know.   
 Decision tree is jsut split the dataset the way that all have the most Information Gain, on and on  
 Computation:  
+![image](https://github.com/user-attachments/assets/67bc2527-d24e-401f-869e-8a5fa89c00d0)
+
     
 ### **Pruning**  
-
+Decision trees can be pruned by replacing a subtree by a leaf when the accuracy on a validation set with the leaf is equal or higher than the accuracy with the subtree. This method is called Reduced Error Pruning: .  
+➩ A validation set is a subset of the training set that is set aside when training the decision tree and only used for pruning the tree.  
+➩ The items use to train the decision tree cannot be used to prune the tree.  
 ### **Random Forest**  
+
 ### **Adaptive Boosting**  
+Decision trees can also be trained sequentially. The items that are classified incorrectly by the previous trees are made more important when training the next decision tree.  
+Each training item has a weight representing how important they are when training each decision tree, and the weights can be updated based on the error made by the previous decision trees. This is called AdaBoost (ADAptive BOOSTing): .  
+
+
 
 
 
