@@ -86,9 +86,15 @@ Computation:
 Decision trees can be pruned by replacing a subtree by a leaf when the accuracy on a validation set with the leaf is equal or higher than the accuracy with the subtree. This method is called Reduced Error Pruning: .  
 ➩ A validation set is a subset of the training set that is set aside when training the decision tree and only used for pruning the tree.  
 ➩ The items use to train the decision tree cannot be used to prune the tree.  
+
 ### **Random Forest**  
+Use alot of tree and let them vote.  
+there is no waight on each tree, each tree have the same weight.  
 
 ### **Adaptive Boosting**  
+For the previous tree, is some part is misclassfied, then the next tree will be focused on the with-issue part.  
+By repeating, there will be a sequency of trees and they will vote.  
+  
 Decision trees can also be trained sequentially. The items that are classified incorrectly by the previous trees are made more important when training the next decision tree.  
 Each training item has a weight representing how important they are when training each decision tree, and the weights can be updated based on the error made by the previous decision trees. This is called AdaBoost (ADAptive BOOSTing): .  
 
