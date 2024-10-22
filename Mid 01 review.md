@@ -79,11 +79,42 @@ The Entropy before the split - the Entropy after the split, I(y|x) = H(y) - H(y|
 The larger the Information Gain, the more info we know.   
 Decision tree is jsut split the dataset the way that all have the most Information Gain, on and on  
 Computation:  
+![image](https://github.com/user-attachments/assets/67bc2527-d24e-401f-869e-8a5fa89c00d0)
+
     
 ### **Pruning**  
+Decision trees can be pruned by replacing a subtree by a leaf when the accuracy on a validation set with the leaf is equal or higher than the accuracy with the subtree. This method is called Reduced Error Pruning: .  
+➩ A validation set is a subset of the training set that is set aside when training the decision tree and only used for pruning the tree.  
+➩ The items use to train the decision tree cannot be used to prune the tree.  
 
 ### **Random Forest**  
+Use alot of tree and let them vote.  
+there is no waight on each tree, each tree have the same weight.  
+
 ### **Adaptive Boosting**  
+For the previous tree, is some part is misclassfied, then the next tree will be focused on the with-issue part.  
+By repeating, there will be a sequency of trees and they will vote.  
+  
+Decision trees can also be trained sequentially. The items that are classified incorrectly by the previous trees are made more important when training the next decision tree.  
+Each training item has a weight representing how important they are when training each decision tree, and the weights can be updated based on the error made by the previous decision trees. This is called AdaBoost (ADAptive BOOSTing): .   
+
+## **L7**  
+### **Linear Classifier**  
+Draw a straight line among the two types(label) of documents.  
+The test doc is labeled based on which side of the line it lies.  
+W0 + W1X1 + W2X2 = b  (for a two dim)
+where the doc contain 2 features, x1 and x2  
+w for weight, decide the orientation of the line.  
+w0 (or Bias): distance from the origine, other w for the slope of the line  
+We use the **perception Alg** to adjust.  
+
+### **Perceptron Algorithm**  
+The **learning rate** controls how fast the weights are updated.  
+**learning rate** is usually constant, ussually 1.  
+**learning rate** can also be a function of time.  
+
+
+
 
 
 
