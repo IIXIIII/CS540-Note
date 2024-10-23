@@ -136,12 +136,32 @@ To fix this we use **Activision Functions** that dont squeezes information.
 <img width="1465" alt="Screenshot 2024-10-22 at 5 27 42 PM" src="https://github.com/user-attachments/assets/0e98c5fa-abcf-4387-86ff-86fac45c73a4">  
 
 ### **Loss Functions** which need **Linear Regression**  
+Sqr Loss = (Yi - Y)^2, which is similar with the **Fit** function in the **Linear Regression**  
+Abs Loss = |Yi - Y|, sometimes poor quality, treat outliers the same, (Support Vector Regression uses)   
+Cross Entropy loss (KL Divergence): the diff of the entropy required and the actual entropy  
+Hinge Loss - used in the Support Vector Machine: get a line that separate data points as for way from the line as possible.  
+(Penalize if in margin, (even it is correct) during test time)  
 
 
-###**Linear Regression**  
-The point (or goal) of ML or Regression is to drow a line the pass through a cloud of points.  
+
+### **Linear Regression**  
+Y = g (X)  
+finding the **g** is the process of **Regression**  
+
+Y = a * X + b (linear)  
+#### **Fit**  
+add all (a * X + b - Yi)^2, and make this as small as possible.  
+Set this the **Gradient**, set it to 0, solve **a** and **b**. 
+The point (or goal) of ML or Regression is to draw a line the pass through a cloud of points.  
 <img width="1115" alt="Screenshot 2024-10-22 at 5 33 57 PM" src="https://github.com/user-attachments/assets/b449e5fb-3e87-4749-bb60-31a0a3ee7019">   
 The first two work, since the coeff is linear, but the second doesn't work for linear regression.  
+Steps:  
+    - draw a line through data plot.  
+    - calculate the distance^2 from each databplot to the line.   
+    - repeat  
+    - make a plot, find the place of the best line.  
+
+### ** Regression**  
 
 
 
@@ -150,19 +170,44 @@ The first two work, since the coeff is linear, but the second doesn't work for l
 
 
 
+### **Support Vector Machine** or **SVM**  
+Each obj is put is an n dimensional space (features),  
+Small training dataset,  
+Draw a line in between the cluster of data plot that separate it with a max margin (data pt to the line).  
+which is **Max Margin Classifier**, and sensitive to outliers. 
+Soft Margin: when we allow miss classifier, the distance between the line and the pt.  
+Use Cross Validation to determine how many miss classification is allow in order to get the best.  
+**Soft Margin Classifier** = **Support Vector Classifier** , which only handle things that can be separated by one line.  
+  
+**Support Vector Machine**  
+Make the vector high dimensional(add another Y axis, the sqr of X) so that a line can be draw 
+1) start the data with lower dimension.  
+2) move the data to a higher dimension.  
+3) find **Support Vector Classifier** that can separate the dp into two groups.  
+  
+**Kernel Function** to find SVC in higher dimen.  
+- **Polynomial Kernel Function** have a d, which refers to the degree of the function.  
+    d = 1, normal **Support Vector Classifier**  
+    d = 2, y = x^2, and the 2D Kernel compute the relationship between each pair of observation.  
+        and we use the relation to find the SVC.   
+
+
+
+
+
+### **Gradient Descent**  
 
 
 
 
 
 
+## **Added Notes**  
 
-
-
-
-
-
-
+### **Max Likelihood Estimation**  
+The point of this is to find the best way to fit the distribution of it to a line.  
+Making thins more general and easy to work with.  
+the word **Likelihood** means trying to find the optimal value for mean or SD for the distribution, given a lot of value.  
 
 
 
