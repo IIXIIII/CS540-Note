@@ -161,8 +161,17 @@ Steps:
     - repeat  
     - make a plot, find the place of the best line.  
 
-### ** Regression**  
-
+### **Logistic Regression**  
+Quick review for Linear Regression  
+    - R^2 to see if the x and y is correlated  
+    - P to see if R^2 is statistically significant.  
+    - prediction.  
+  
+**Logistic Regression** only predict things that are true or false.  
+Fit a S shape Logistic Function to the data.  
+Cannot compare models, unlike linear,  
+also Unlike Linear that use R^2 to draw the line, Logistic use maximum likelihood to draw the like,  
+by calculating the Max Likelihood on the X axis.  
 
 
 
@@ -191,6 +200,22 @@ Make the vector high dimensional(add another Y axis, the sqr of X) so that a lin
     d = 2, y = x^2, and the 2D Kernel compute the relationship between each pair of observation.  
         and we use the relation to find the SVC.   
 
+
+### **Neural Network**  
+- The first layer of the **Neural Network** is the input layer, for image identification then it is the number of pixels.  
+- The activation of each Neuron for the second layer is based on a **w**, weight, times the previous layer,  then + **bias**, then times the **Sigmoid**.  
+- then compose the sum with other functions, one way is called the ReLu, or sigmoid squishification.   
+- find the right **weight** and **Bias**  
+- the largest in the output layer is what we want.  
+  
+The **weight** is like the strength of the connection between Neuron, and the  **Bias** is like likelihood of that **Neuron** being active.  
+**Cost Function** : add up (what value for the output layer we want - what it actually gives)^2  
+and we want the cost function to be small.  
+then calculate the average of the cost function.  
+Plot out the Cost Function, find the minimum pt, but sometimes it will just end up in local minimum.  
+
+### **Back Propagation**  
+**This is how Neural Network Learn**  
 
 
 
