@@ -1,0 +1,19 @@
+
+
+## **Static Evaluation Function**  
+A static evaluation function, also known as a **heuristic evaluation** function, is a function used by computer programs to estimate a game position's value or goodness. 
+It's used in game tree search to estimate the quality of a board configuration and the likelihood of a player winning.
+
+### How it works  
+the biger the batter, negative for good, vise versa  
+### How it's used  
+Static evaluation is used in the **minimax search algorithm** with **alpha-beta pruning**, which is the algorithm used for two-player games like chess.  
+
+
+
+
+
+**minimax search algorithm**   
+recursively explore the game, find every branch of the game, then choose the next step base on the result that lead to the best result.  
+
+
