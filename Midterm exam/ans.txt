@@ -1,0 +1,7 @@
+Version 1: CS540_Midterm_V1.pdf
+
+Solution: A, B, B, D, D, B, D, A, D, C, C, A, D, B, B, B, D, B, B, A, A, D, E, E, B, A, A, A, B, B
+
+Version 2: CS540_Midterm_V2.pdf
+
+Solution: D, A, B, A, C, A, B, A, B, C, D, A, A, B, A, B, A, A, D, A, A, A, E, E, D, B, D, C, B, C
